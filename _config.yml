@@ -1,0 +1,10 @@
+# Site settings
+title: aarvay
+description: >
+  aarvay's homepage.
+baseurl: ""
+url: "http://aarvay.com"
+
+# Build settings
+markdown: kramdown
+permalink: /logs/:title

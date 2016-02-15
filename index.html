@@ -1,0 +1,23 @@
+---
+layout: default
+title: logs
+---
+
+<div class="home">
+
+  <ul class="post-list">
+
+    {% for post in site.posts %}
+    <li>
+      <div class="link-header">
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+      </div>
+
+      <div class="post-excerpt">{{ post.excerpt }}</div>
+    </li>
+    {% endfor %}
+
+  </ul>
+
+</div>

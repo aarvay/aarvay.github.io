@@ -1,0 +1,20 @@
+<div class="site-header">
+
+  <a class="site-title" href="{{ site.baseurl }}/"><b>{{ site.title }}</b></a>
+
+  <label class="menu-icon" for="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </label>
+
+  <input type="checkbox" class="menu-toggle" id="hamburger">
+
+  <div class="site-menu">
+    <a class="page-link" href="{{ site.baseurl }}/">logs</a>
+    <a class="page-link" href="{{ "/about/" | prepend: site.baseurl }}">about</a>
+    <a class="page-link" href="{{ "/notes/" | prepend: site.baseurl }}">notes</a>
+    <!-- <a class="page-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a> -->
+  </div>
+
+</div>
